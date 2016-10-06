@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>documentfill</title>
+
+
+
+
+
+
+    <FORM name="testform" onSubmit="return validate()">
+Name:<input type="text" size=30 name="Name" id="user_input"><br></br>
+Age:<input type="text" size=3 name="age"><br></br>
+Roll:<input type="text" size=5 name="roll"><br></br>
+<input type="submit" value="Submit" onclick="showInput();"><br/>
+</FORM>
+<script>
+function showInput() {
+document.getElementById('display').innerHTML =document.getElementById("user_input").value;
+
+    }
+    </script>
+<SCRIPT>LANGUAGE="JavaScript"
+
+function validate(){
+var digits="0123456789"
+var temp
+if (document.testform.Name.value=="") {
+alert("No Name !")
+return false
+}
+if (document.testform.age.value=="") {
+alert("Invalid Age !")
+return false
+}
+for (var i=0;i<document.testform.age.value.length;i++){
+temp=document.testform.age.value.substring(i,i+1)
+if (digits.indexOf(temp)==-1){
+alert("Invalid Age !")
+return false
+      }
+   }
+return true
+}
+</SCRIPT>
+<body>
+
+    <p><span id='display'></span></p>
+
+
+  </body>
+  </html>
+
+
+
+
+
+  </body>
+</html>
