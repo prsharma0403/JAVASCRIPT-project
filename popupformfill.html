@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<title>Form Example</title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+  message += "<li><b>ROLL: </b>" + document.form1.roll.value;
+  message += "<li><b>AGE: </b>" + document.form1.age.value + "</ul>";
+  DispWin.document.write(message);
+
+}
+</script>
+</head>
+<body>
+<h1>Form sample</h1>
+<form name="form1">
+  <table>
+    <tr>
+    <p>
+<b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+<b>Roll:</b> <input TYPE="TEXT" SIZE="10" NAME="roll">
+<b>Age: </b> <input TYPE="TEXT" SIZE="3" NAME="age">
+<input TYPE="BUTTON" VALUE="Display" onClick="display();"></p>
+</tr>
+</table>
+</form>
+</body>
+</html>
