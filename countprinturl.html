@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+<p>
+
+  <table class="links" border="1">
+
+
+
+
+<tr><td><a href="https://www.snapdeal.com/product/philips-qt4006-trimmers-black-and/686142575613?MID=WEB|ElexMall2016|65|">SNAP_DEAL</a></td></tr>
+<tr><td><a href="https://www.google.co.in">GOOGLE</a></tr></td>
+<tr><td><a href="http://timesofindia.indiatimes.com/city/bangalore">BANG_NEWS</a></tr></td>
+<tr><td><a href="http://bridgelabz.com/">BRIDGE_labz</a></tr></td>
+<tr><td><a href="http://www.firstpost.com/category/sports">SPORTS_NEWS</a></tr></td>
+
+</table>
+</p>
+
+<p>click button to get no.of links </p>
+
+<button onclick="myFunction()">click </button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  //var count;
+            //
+            // for(count = 0; count < 4; count++){
+            //    document.write("Links are : " + count );
+            //    document.write("<br />");
+            // }
+    var x=document.getElementsByTagName("a");
+    console.log(x);
+    document.getElementById("demo").innerHTML = x.length;
+}
+</script>
+
+  </body>
+</html>
