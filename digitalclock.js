@@ -1,37 +1,42 @@
 
-  function digclock()
-  {
-  	var d = new Date();
-  	var t = d.toLocaleTimeString();
-
-      	document.getElementById("clock").innerHTML = t;
-         setInterval(digclock,1000);
-  }
-
-
-    digclock();
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+startTime();
     function jsonData()
     {
     var article = [
     	{
-    		"author" : "prashantpraveen",
-    		"datepublished" : "11-11-2015",
-            "publication" : "samana",
+    		"author" : "prashantpraveen"+"<br>",
+    		"datepublished" : "11-11-2015"+"<br>",
+            "publication" : "samana"+"<br>",
     	},
         {
-    		"author" : "chetan bhagat",
-    	    "datepublished" : "1-12-2016",
-            "publication" : "banglore mirror",
+    		"author" : "chetan bhagat"+"<br>",
+    	    "datepublished" : "1-12-2016"+"<br>",
+            "publication" : "banglore mirror"+"<br>",
     	},
     	{
-    	    "author" : "babajandev",
-    	    "datepublished" : "29-2-2016",
-    	    "publication" : "hindustan",
+    	    "author" : "babajandev"+"<br>",
+    	    "datepublished" : "29-2-2016"+"<br>",
+    	    "publication" : "hindustan"+"<br>",
     	},
       	{
-    	    "author" : "thetimesofindia",
-    	    "datepublished" : "3-1-1942",
-    	    "publication" : "rk laksham",
+    	    "author" : "thetimesofindia"+"<br>",
+    	    "datepublished" : "3-1-1942"+"<br>",
+    	    "publication" : "rk laksham"+"<br>",
     	}
      ]
     //function to print json objects
