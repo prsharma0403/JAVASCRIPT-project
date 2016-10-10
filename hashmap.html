@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<script>
+var h = new Object(); // or just {}
+h['hastable']=0;
+h['one'] = 1;
+h['two'] = 2;
+h['three'] = 3;
+h['Four']=4;
+h['Five']=5;
+h['six']=6;
+h['seven']=7;
+h['hastable']=0;
+
+// show the values stored
+for (var k in h) {
+  // use hasOwnProperty to filter out keys from the Object.prototype
+  if (h.hasOwnProperty(k)) {
+      alert('h is: ' + k + ', value is: ' + h[k]);
+  }
+}
+</script>
+
+<body>
+
+</body>
+
+</html>
