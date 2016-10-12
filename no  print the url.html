@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+  <table border="1">
+
+
+
+
+<tr><td><a href="https://www.snapdeal.com">SNAP_DEAL</a></td></tr>
+<tr><td><a href="https://www.google.co.in">GOOGLE</a></tr></td>
+<tr><td><a href="http://timesofindia.indiatimes.com/">BANG_NEWS</a></tr></td>
+<tr><td><a href="http://bridgelabz.com/">BRIDGE_labz</a></tr></td>
+<tr><td><a href="http://www.firstpost.com/category/sports">SPORTS_NEWS</a></tr></td>
+
+
+</table>
+
+
+<p>click button to get no.of links </p>
+
+<p id="links"></p>
+
+
+<button onclick="myFunction()">countlink </button>
+<p id="demo"></p>
+<p id="links"></p>
+<button onclick="displaylink()">displaylink </button>
+<script>
+
+function myFunction(){
+  var x=document.links.length;
+  document.getElementById("demo").innerHTML=x;
+
+
+}
+function displaylink()
+{
+  var x =document.links;
+  var links="";
+  var j;
+  for (var j = 0 ; j < x.length; j++){
+    var links=links+x[j].href+ "<br>";
+}
+document.getElementById("links").innerHTML=links;
+}
+</script>
+
+  </body>
+</html>
