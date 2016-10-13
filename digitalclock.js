@@ -20,22 +20,22 @@ startTime();
     var article = [
     	{
     		"author" : "prashantpraveen"+"<br>",
-    		"datepublished" : "11-11-2015"+"<br>",
+    		"datepublished" : "11/11/2015"+"<br>",
             "publication" : "samana"+"<br>",
     	},
         {
     		"author" : "chetan bhagat"+"<br>",
-    	    "datepublished" : "1-12-2016"+"<br>",
+    	    "datepublished" : "1/12/2016"+"<br>",
             "publication" : "banglore mirror"+"<br>",
     	},
     	{
     	    "author" : "babajandev"+"<br>",
-    	    "datepublished" : "29-2-2016"+"<br>",
+    	    "datepublished" : "29/2/2016"+"<br>",
     	    "publication" : "hindustan"+"<br>",
     	},
       	{
     	    "author" : "thetimesofindia"+"<br>",
-    	    "datepublished" : "3-1-1942"+"<br>",
+    	    "datepublished" : "3/1/1942"+"<br>",
     	    "publication" : "rk laksham"+"<br>",
     	}
      ]
