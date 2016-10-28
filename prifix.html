@@ -3,7 +3,9 @@
 <script>
 function prefixWord(...args)
 {
+
 console.log(this+" "+[args]);
+	alert(this+" "+[args]);
 }
 var args = prompt("enter any argument");
 prefixWord.apply("bridgeLabz",[args]);

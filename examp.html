@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>no of links</title>
+  </head>
+  <script type="text/javascript">
+  <div id="toc"></div>
+
+  <a href="1" title="title of a1 link">a1</a> blah blah<br>
+  <a href="2" title="title of a2 link">a2</a> blah blah<br>
+  <a href="3" title="title of a3 link">a3</a> blah blah<br>
+
+
+var links = document.getElementsByTagName('a');
+var toc = document.getElementById('toc');
+
+for (var i = 0 ; i < links.length; i++)
+{
+
+  newTitle = document.createElement('div');
+
+  newTitle.innerHTML = links[i].title;
+
+
+  toc.appendChild( newTitle );
+}
+</script>
+  <body>
+
+  </body>
+</html>
