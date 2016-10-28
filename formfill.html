@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Form Example</title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+  message += "<li><b>Age: </b>" + document.form1.Age.value;
+  message += "<li><b>Phone: </b>" + document.form1.Phone.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+</head>
+<body>
+<h1>FormFilling</h1>
+
+<form name="form1">
+<p><b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+</p>
+<p><b>Age:</b> <input TYPE="TEXT" SIZE="3" NAME="Age">
+</p>
+<p><b>Phone: </b> <input TYPE="TEXT" SIZE="10" NAME="Phone">
+</p>
+<p><input TYPE="BUTTON" VALUE="Display" onClick="display();"></p>
+</form>
+</body>
+</html>

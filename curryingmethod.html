@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> CurryingMethod</title>
+  </head>
+
+
+  <script>
+  var addition = function(a) {
+          return function(b) {
+              return a + b;
+          }
+      };
+
+      var subtraction = function(a) {
+          return function(b) {
+              return a - b;
+          }
+      };
+
+      var multiplication = function(a) {
+          return function(b) {
+              return a * b;
+          }
+      };
+      var division = function(a){
+        return function(b) {
+          return a/b;
+        }
+      };
+      var modulus= function(a){
+        return function(b){
+          return a%b;
+
+        }
+      };
+
+
+
+      var add = addition(10);
+      var add1 = add(20);
+      document.write("addition of two numbers: " + add1 + "<br>");
+      var sub = subtraction(20);
+      var sub1 = sub(10);
+      document.write("subtraction of two numbers: " + sub1+ "<br>" );
+      var mul = multiplication(10);
+      var mult1 = mul(10);
+      document.write("multiplication of two numbers: " + mult1+ "<br>" );
+      var div = division(20);
+      var div1 = div(10);
+      document.write("division of two number :"+ div1+ "<br>" );
+       var mod =modulus(16);
+       var mod1=mod(3);
+       document.write("modulus of two numbers:"+mod1+ "<br>");
+</script>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Untitled Document</title>
+<style type="text/css">
+#mytab td{
+width:100px;
+height:25px;
+background:white;
+}
+  </style>
+  <script type="text/javascript">
+  function addRow(){
+   var root=document.getElementById('mytab').getElementsByTagName('tbody')[0];
+  var rows=root.getElementsByTagName('tr');
+  var clone=cloneEl(rows[rows.length-1]);
+  root.appendChild(clone);
+  }
+  function addColumn(){
+  var rows=document.getElementById('mytab').getElementsByTagName('tr'), i=0, r, c, clone;
+  	while(r=rows[i++]){
+  	c=r.getElementsByTagName('td');
+  	clone=cloneEl(c[c.length-1]);
+  	c[0].parentNode.appendChild(clone);
+  }
+  }
+  function cloneEl(el){
+  var clo=el.cloneNode(true);
+  return clo;
+  }
+  </script>
+
+  </head>
+  <body>
+  <form action="">
+    <input type="button" value="Row+"  onclick="addRow()">
+  <input type="button" value="Column+" onclick="addColumn()">
+  </form>
+  <br>
+
+  <table id="mytab" border="1" cellspacing="1" cellpadding="1">
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  </body>
+  </html>
+</html>

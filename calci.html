@@ -1,0 +1,81 @@
+ <html>
+<head>
+
+
+  <style>
+  h1 {
+    background-color: darkorange;
+     margin-bottom: 0px;
+     max-width: 500px;
+     /*padding-right: 20px*/
+
+}
+  div {
+
+
+
+  }
+
+</style>
+</head>
+
+  <div>
+
+<script type="text/javascript">
+function add()
+{
+var a=document.cal.num1.value;
+var b=document.cal.num2.value;
+var c=parseInt(a)+parseInt(b);
+document.cal.res.value=c;
+}
+function sub()
+{
+var a=document.cal.num1.value;
+var b=document.cal.num2.value;
+var c=a-b;
+document.cal.res.value=c;
+}
+function mul()
+{
+var a=document.cal.num1.value;
+var b=document.cal.num2.value;
+var c=a*b;
+document.cal.res.value=c;
+}
+function div1()
+{
+var a=document.cal.num1.value;
+var b=document.cal.num2.value;
+var c=a/b;
+document.cal.res.value=c;
+}
+</script>
+</head>
+<body>
+  <center>
+  <h1>calculator</h1>
+<form name="cal">
+  <table border="1"  style="background-color:skyblue;max-width:500p">
+    <tr>
+
+<th>Number1:<input type="text" name="num1" /><th>
+  </tr>
+  <tr>
+<th>Number2:<input type-="text" name="num2" /><th>
+</tr>
+<tr>
+<th>operation:
+<select name="-please select-">
+<option value="please select">-please select-</option>
+<option value="addition" onclick="add()">addition</option>
+<option value="subtraction" onclick="sub()">subtraction</option>
+<option value="multiplication" onclick="mul()">multiplication</option>
+<option value="division" onclick="div()">division</option><br>
+<b>calculation<b>=<input type="text" name="res" />
+</div>
+</select></th>
+</tr></table></br>
+</form>
+</body>
+</html
